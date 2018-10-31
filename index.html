@@ -19,12 +19,12 @@
 
 <body>
   <nav class="navbar navbar-fixed-top navbar-dark bg-dark navbar-expand-md navbar-template" id="nav1">
-    <a href="http://www.kcycledesign.com" class="navbar-brand">Kcycle Design</a>
+    <a href="index.html" class="navbar-brand"><img src="assets/img/nav_k.svg" alt="" height="70px">Kcycle Design</a>
     <div class="d-flex flex-row order-2 order-sm-3">
       <ul class="navbar-nav flex-row">
-        <li class="nav-item"><a href="https://www.facebook.com/kcycledesign" class="nav-link px-2"><i class="fab fa-facebook-square fa-2x"></i></a></li>
-        <li class="nav-item"><a href="https://www.twitter.com/kcycledesign" class="nav-link px-2"><i class="fab fa-twitter-square fa-2x"></i></a></li>
-        <li class="nav-item"><a href="https://www.instagram.com/kcycle_design" class="nav-link px-2"><i class="fab fa-instagram fa-2x"></i></a></li>
+        <li class="nav-item"><a href="https://www.facebook.com/kcycledesign" target="_blank" class="nav-link px-2"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+        <li class="nav-item"><a href="https://www.twitter.com/kcycledesign" target="_blank" class="nav-link px-2"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+        <li class="nav-item"><a href="https://www.instagram.com/kcycle_design" target="_blank" class="nav-link px-2"><i class="fab fa-instagram fa-2x"></i></a></li>
       </ul>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
         <span class="navbar-toggler-icon"></span>
@@ -35,8 +35,8 @@
         <li class="nav-item"><a href="#designs" class="nav-link">Designs</a></li>
         <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
         <li class="nav-item"><a href="#testimonial" class="nav-link">Testimonials</a></li>
-        <li class="nav-item"><a href="/aboutus.html" class="nav-link">About Us</a></li>
-        <button type="button" class="btn btn-outline-success">Contact Us</button>
+        <li class="nav-item"><a href="aboutus.html" class="nav-link">About Us</a></li>
+        <a href="#contact"><button type="button" class="btn btn-outline-success">Contact Us</button></a>
       </ul>
     </div>
   </nav>
@@ -50,7 +50,7 @@
 
   <section class="bikes" id="designs">
     <div class="slogo">
-      <img id="logo" src="/assets/img/KCycle_Oval_250x100.svg" alt="" height="150px">
+      <img id="logo" src="assets/img/KCycle_Oval_250x100.svg" alt="" height="150px">
       <p><em>"Better and Better"</em></p>
     </div>
     <h3 class="title">Custom Paint Designs</h3>
@@ -67,11 +67,22 @@
     </ul>
   </section>
 
+  <section class="contact" id="contact">
+    <h3 class="title">Contact Us!</h3>
+    <p>Submit your name and email address and we will be in contact to help start your customization needs.</p>
+    <hr>
+    <form method="POST" action="https://formspree.io/kcycledesign@gmail.com">
+      <input type="text" name="name" placeholder="Name">
+      <input type="email" name="email" placeholder="Your Email">
+      <button type="submit" class="btn btn-outline-success btn-lg">Send</button>
+    </form>
+  </section>
+
   <section class="services" id="services">
     <h3 class="title">Services</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare commodo tellus sit amet sollicitudin.
-      Donec nibh
-      orci, varius fringilla.</p>
+    <p>Allow us to create and coordinate with you art and color combinations that personalizes your bike and gear. Matte or Gloss
+    finishes are offered. Simple or complex, your bike is treated with the finest of material and product lines. Meticulous finishing
+    for a stand-out bike you deserve. The precision and detail of our graphics and artwork is second to none.</p>
     <hr>
 
     <ul class="grid">
@@ -80,29 +91,16 @@
         <h4>Bikes</h4>
         <p>Including frames, forks, handle bars, seat posts and project team bikes.</p>
       </li>
-      <li>
-        <i class="fa fa-motorcycle fa-4x"></i>
-        <h4>Motorcycles</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore
-          magna
-          aliqua. Sit amet mattis vulputate enim.</p>
-      </li>
+      
       <li>
         <i class="fab fa-galactic-republic fa-4x"></i>
         <h4>Wheels</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore
-          magna
-          aliqua. Sit amet mattis vulputate enim.</p>
+        <p>Carbon disc and Aerodynamic wheels can be painted to coordinate with bike/apparel.</p>
       </li>
       <li>
         <i><img src="assets/img/helmet.svg" width="56px" height="56px" alt=""></i>
         <h4>Helmets</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore
-          magna
-          aliqua. Sit amet mattis vulputate enim.</p>
+        <p>Triathlon/road helmets painted to coordinate with team kits, apparel and/or your bike. Why not personalize your head protection!</p>
       </li>
     </ul>
   </section>
@@ -167,26 +165,14 @@
 
   </section>
 
-  <section class="contact" id="contact">
-    <h3 class="title">Contact Us!</h3>
-    <p>Email Mike Furtek and Kathy Petri to discuss your customizing needs</p>
-    <hr>
-    <form method="POST" action="https://formspree.io/kcycledesign@gmail.com">
-      <input type="email" name="email" placeholder="Your Email">
-      <input type="textarea" name="message" placeholder="Message">
-      <button type="submit" class="btn">Send</button>
-    </form>
-  </section>
-
-
   <footer>
-    <p>Photo by paolo candelo on Unsplash</p>
-    <p>© 2018 Copyright: <a href="https://www.egelnoteagle.com"> EgelNotEagle</a></p>
+    <p>Kcycle Design East Peoria, IL | (682) 804-1077</p>
+    <p>© 2018 Copyright: <a href="www.derekegel.com" target="_blank" >EgelNotEagle</a></p>
     
     <ul>
-      <li><a href="https://twitter.com/kcycledesign"><i class="fab fa-twitter-square fa-2x"></i></a></li>
-      <li><a href="https://www.facebook.com/kcycledesign"><i class="fab fa-facebook-square fa-2x"></i></a></li>
-      <li><a href="https://www.instagram.com/kcycle_design/"><i class="fab fa-instagram fa-2x"></i></a></li>
+      <li><a href="https://twitter.com/kcycledesign" target="_blank" ><i class="fab fa-twitter-square fa-2x"></i></a></li>
+      <li><a href="https://www.facebook.com/kcycledesign" target="_blank" ><i class="fab fa-facebook-square fa-2x"></i></a></li>
+      <li><a href="https://www.instagram.com/kcycle_design/" target="_blank" ><i class="fab fa-instagram fa-2x"></i></a></li>
     </ul>
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
